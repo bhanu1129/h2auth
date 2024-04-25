@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #F9F4F0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn1{
+    @apply bg-[#CEDCFF] text-xl text-[#1F392B] py-5 px-10 rounded-full 
+    hover:bg-[#EFF879] transition-all duration-300 cursor-pointer
+}
+
+.btn2{
+    @apply border border-black text-xl text-[#1F392B] py-5 px-10 rounded-full 
+    hover:bg-teal-950 hover:text-white transition-all duration-300 cursor-pointer
+}
+
+.contact-form{
+    @apply py-5 px-3 font-light bg-[#FAF8F4] rounded-xl focus:outline-teal-950
 }

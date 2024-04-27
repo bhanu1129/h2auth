@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import { btn } from "../data"
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
       </Link>
       <div className="hidden md:flex">
         <Link to="/contact" className="btn1">
-          Contact Us
+          {btn}
         </Link>
       </div>
     </nav>

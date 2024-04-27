@@ -1,6 +1,7 @@
 import devfriendly from "../../assets/home/devfriendly.png";
 import { IoIosArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { devFriendly } from "../../data";
 
 const DevFriendly = () => {
   return (
@@ -10,32 +11,25 @@ const DevFriendly = () => {
       </div>
       <div className="mt-10">
         <h2 className="mb-4 text-3xl md:text-6xl lg:text-4xl font-semibold text-teal-950">
-          Developer Friendly
+          {devFriendly.title}
         </h2>
         <div className="mb-12 flex flex-col gap-4 text-xl font-light leading-8 text-teal-900">
           <div className="flex gap-2 items-center">
             <IoIosArrowDropright className="min-h-10 min-w-10 text-teal-900" />
-            <p>
-              We have a TypeScript Based SDK that can be used with any web based
-              application.
-            </p>
+            <p>{devFriendly.point1}</p>
           </div>
           <div className="flex gap-2 items-center">
             <IoIosArrowDropright className="min-h-10 min-w-10 text-teal-900" />
-            <p>
-              Mobile applications can directly make use of the APIs to create a
-              customised setup for authentication.
-            </p>
+            <p>{devFriendly.point2}</p>
           </div>
           <div className="flex gap-2 items-center">
             <IoIosArrowDropright className="min-h-10 min-w-10 text-teal-900" />
-            <p>
-              Your backend servers can easily and securely confirm user identity
-              using JWTs.
-            </p>
+            <p>{devFriendly.point3}</p>
           </div>
         </div>
-        <Link to="/contact" className="btn1">Contact Us</Link>
+        <Link to="/contact" className="btn1">
+          {devFriendly.btn}
+        </Link>
       </div>
     </section>
   );

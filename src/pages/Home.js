@@ -2,7 +2,7 @@ import DevFriendly from "../components/home/DevFriendly";
 import FAQ from "../components/home/FAQ";
 import Features from "../components/home/Features";
 import Integration from "../components/home/Integration";
-import Main from "../components/home/Main";
+import Main from "../components/home/Header";
 import Security from "../components/home/Security";
 import Team from "../components/home/Team";
 
@@ -17,8 +17,8 @@ const Home = () => {
       <div className="mb-24 mt-24 md:mt-28">
         <Security />
       </div>
-      <div className="relative mt-48 mb-24">
-        <img src={arrow} className="absolute left-5 top-[-10rem] opacity-50" />
+      <div className="relative mt-48 ">
+        <img src={arrow} className="absolute size-40 top-48 md:left-0 md:size-64 lg:size-96 lg:top-[-10rem] opacity-50" />
         <Features />
       </div>
       <div className="mb-24">
